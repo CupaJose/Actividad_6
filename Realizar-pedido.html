@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href=".\boletos.jpg" type="image/jpg"
     <title>PEDIDOS CONCIERTOS</title>
 </head>
 <body style="background-color:#E1FFA8">
     <h1>TICKETPROMASTER</h1>
     <h3>REALIZA TU ORDEN AQUÍ</h3>
-    <form action="http://localhost/php/Actividad_6/Pedidos.php" method="post">
+    <form action="http://localhost/php/Actividad_6/Pedidos.php" method="post" target="_blank">
         <fieldset>
             <legend><i>PEDIDO</i></legend>
             <label><u>NOMBRE</u>
@@ -60,11 +61,11 @@
             </label>
             <br><br>
             <label><u>EXTRAS</u></label><br>
-            <input type="checkbox" id="fotos" name="fotos" value="fotos">
+            <input type="checkbox" id="fotos" name="fotos" value="Fotos">
             <label for="fotos">Fotos con los integrantes</label><br>
-            <input type="checkbox" id="bebidas" name="bebidas" value="bebidas">
+            <input type="checkbox" id="bebidas" name="bebidas" value="Bebidas">
             <label for="bebidas">Bebidas ilimitadas</label><br>
-            <input type="checkbox" id="productos_ex" name="productos_ex" value="productos_ex">
+            <input type="checkbox" id="productos_ex" name="productos_ex" value="Productos exclusivos">
             <label for="productos_ex">Productos Exclusivos</label><br><br>
             <label><u>16 números de su tarjeta</u>
                 <input type="number" name="num_tarj" required>
