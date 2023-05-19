@@ -1,0 +1,25 @@
+#pedidos{
+    position: relative;
+    top:250px;
+    left: 150px;
+}
+#pedidos{
+    color: rgb(0, 195, 255);
+    font-size: 200%;
+}
+#Realizar-pedido{
+    position: relative;
+    top:250px;
+    right: -500px;
+}
+#Realizar-pedido{
+    color: rgb(0, 195, 255);
+    font-size: 200%;
+}
+body{
+    background-image: url(concierto_fondo.jpg);
+    background-size: cover;
+}
+h1{
+    color: rgb(255, 255, 255);
+}

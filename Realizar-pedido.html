@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIDOS CONCIERTOS</title>
+</head>
+<body style="background-color:#E1FFA8">
+    <h1>TICKETPROMASTER</h1>
+    <h3>REALIZA TU ORDEN AQUÍ</h3>
+    <form action="http://localhost/php/Actividad_6/Pedidos.php" method="post">
+        <fieldset>
+            <legend><i>PEDIDO</i></legend>
+            <label><u>NOMBRE</u>
+                <input type="text" name="nombre" required placeholder="José Clemente Cupa Sepúlveda">
+            </label>
+            <br><br>
+            <label><u>EDAD</u>
+                <input type="number" name="edad" required>
+            </label>
+            <br><br>
+            <label><u>CORREO</u>
+                <input type="email" name="correo" required placeholder="cupa.jose@gmail.com">
+            </label>
+            <br><br>
+            <label><u>ZONA</u>
+                <select name="zona" id="zona" required>
+                    <option value="VIP">VIP</option>
+                    <option value="PRO">PRO</option>
+                    <option value="MORTAL">MORTAL</option>
+                    <option value="BASICO">BASICO</option>
+                </select>
+            </label>
+            <br><br>
+            <label><u>BANDAS</u>
+                <select name="artista" id="artista" required>
+                    <option value="Mägo de oz">Mägo de oz</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="El cuarteto de nos">El cuarteto de nos</option>
+                    <option value="SOAD">System of a down</option>
+                </select>
+            </label>
+            <br><br>
+            <label><u>FECHA</u>
+                <input type="date" name="fecha" required>
+            </label>
+            <br><br>
+            <label><u>CANTIDAD DE BOLETOS</u>
+                <input type="number" name="numeroboletos" required>
+            </label>
+            <br><br>
+            <label><u>LUGAR</u>
+                <select name="lugar" id="lugar" required>
+                    <option value="Arena CDMX">Arena CDMX</option>
+                    <option value="Foro Sol">Foro Sol</option>
+                    <option value="Auditorio Blackberry">Auditorio Blackberry</option>
+                    <option value="Palacio de los deportes">Palacio de los deportes</option>
+                </select>
+            </label>
+            <br><br>
+            <label><u>EXTRAS</u></label><br>
+            <input type="checkbox" id="fotos" name="fotos" value="fotos">
+            <label for="fotos">Fotos con los integrantes</label><br>
+            <input type="checkbox" id="bebidas" name="bebidas" value="bebidas">
+            <label for="bebidas">Bebidas ilimitadas</label><br>
+            <input type="checkbox" id="productos_ex" name="productos_ex" value="productos_ex">
+            <label for="productos_ex">Productos Exclusivos</label><br><br>
+            <label><u>16 números de su tarjeta</u>
+                <input type="number" name="num_tarj" required>
+            </label>
+            <br><br>
+            <label><u>Fecha de vencimiento</u>
+                <input type="date" name="fecha_vencimiento" required>
+            </label>
+            <br><br>
+            <label><u>CVV</u>
+                <input type="number" name="cvv" required>
+            </label>
+        </fieldset>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
